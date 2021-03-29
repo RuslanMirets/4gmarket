@@ -5935,6 +5935,7 @@ $(document).ready(function ($) {
         // thumbnailPointer: true,
         thumbnailWidth: 83,
         thumbnailHeight: 99,
+        thumbnailArrows: true,
         autoplay: false,
         breakpoints: {
             800: {

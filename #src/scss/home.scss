@@ -101,6 +101,7 @@
         height: 99px;
         border: 1px solid #ededed;
     }
+
     // .product__description
     &__description {
         // padding-right: 126px;
@@ -199,6 +200,7 @@
         padding-left: 42px;
         position: relative;
         margin-bottom: 30px;
+        color: #172029;
         // .product__delivery-list_pickup
         &_pickup {
             &::before {
@@ -206,6 +208,14 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+            }
+            a {
+                text-decoration: underline;
+                color: #4517d3;
+            }
+            span {
+                text-transform: uppercase;
+                color: #ff5a00;
             }
         }
         // .product__delivery-list_courier

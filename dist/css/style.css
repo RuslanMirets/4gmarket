@@ -1551,6 +1551,7 @@ a.sp-video:after {
   padding-left: 42px;
   position: relative;
   margin-bottom: 30px;
+  color: #172029;
 }
 
 .product__delivery-list_pickup::before {
@@ -1558,6 +1559,16 @@ a.sp-video:after {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.product__delivery-list_pickup a {
+  text-decoration: underline;
+  color: #4517d3;
+}
+
+.product__delivery-list_pickup span {
+  text-transform: uppercase;
+  color: #ff5a00;
 }
 
 .product__delivery-list_courier::before {
