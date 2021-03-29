@@ -1,13 +1,3 @@
-// Меню бургер
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-    iconMenu.addEventListener("click", function (e) {
-        document.body.classList.toggle('_lock');
-        iconMenu.classList.toggle('_active');
-        menuBody.classList.toggle('_active');
-    });
-}
 /*!
 *  - v1.2.1
 * Homepage: http://bqworks.com/slider-pro/
@@ -5923,30 +5913,3 @@ JWPlayerVideo.prototype.replay = function() {
 };
 
 })( jQuery );
-$(document).ready(function ($) {
-    $('#product-slider').sliderPro({
-        width: 390,
-        height: 390,
-        orientation: 'vertical',
-        loop: false,
-        // arrows: true,
-        buttons: false,
-        thumbnailsPosition: 'left',
-        // thumbnailPointer: true,
-        thumbnailWidth: 83,
-        thumbnailHeight: 99,
-        autoplay: false,
-        breakpoints: {
-            800: {
-                thumbnailsPosition: 'bottom',
-                thumbnailWidth: 270,
-                thumbnailHeight: 100
-            },
-            500: {
-                thumbnailsPosition: 'bottom',
-                thumbnailWidth: 120,
-                thumbnailHeight: 50
-            }
-        }
-    });
-});

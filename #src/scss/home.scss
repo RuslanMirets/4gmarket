@@ -35,6 +35,7 @@
     &__info {
         display: flex;
         align-items: center;
+        margin-bottom: 30px;
     }
     // .product__article
     &__article {
@@ -67,5 +68,182 @@
             left: 0;
         }
     }
+    // .product__body
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 390px 1fr;
+    }
+    // .product__slider
+    &__slider {
+        height: 486px;
+        margin-right: 31px;
+        display: flex;
+        align-items: center;
+    }
+    .sp-slides-container {
+    }
+    // .product__slider-slides
+    &__slider-slides {
+    }
+    // .product__slider-slide
+    &__slider-slide {
+    }
+    // .product__slider-thumbnails
+    &__slider-thumbnails {
+    }
+    .sp-left-thumbnails .sp-thumbnail-container,
+    .sp-right-thumbnails .sp-thumbnail-container {
+        margin-bottom: 10px;
+    }
+    // .product__slider-thumbnail
+    &__slider-thumbnail {
+        width: 83px;
+        height: 99px;
+        border: 1px solid #ededed;
+    }
+    // .product__description
+    &__description {
+        // padding-right: 126px;
+        border-right: 1px solid #ededed;
+        padding-top: 70px;
+    }
+    // .product__price
+    &__price {
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    // .product__discount
+    &__discount {
+        max-width: 261px;
+        margin-bottom: 20px;
+    }
+    // .product__discount-label
+    &__discount-label {
+        font-size: 14px;
+        color: #7e7e7e;
+        margin-bottom: 7px;
+    }
+    // .product__discount-info
+    &__discount-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .product__discount-percent
+    &__discount-percent {
+        font-weight: 600;
+        font-size: 14px;
+        color: #fff;
+        background-color: #ffc800;
+        border-radius: 5px;
+        padding: 0 18px;
+        line-height: 23px;
+    }
+    // .product__discount-price
+    &__discount-price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #7e7e7e;
+        padding-right: 33px;
+        position: relative;
+        &::after {
+            content: url("../img/product/info.svg");
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    // .product__add-to-cart
+    &__add-to-cart {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 261px;
+        height: 53px;
+        background: #4517d3;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    // .product__characteristics
+    &__characteristics {
+    }
+    // .product__characteristics-item
+    &__characteristics-item {
+        font-size: 16px;
+        color: #7e7e7e;
+        margin-bottom: 10px;
+        &:nth-child(3) {
+            margin-bottom: 30px;
+        }
+        span {
+            color: #000;
+        }
+    }
+    // .product__characteristics-link
+    &__characteristics-link {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    // .product__delivery
+    &__delivery {
+        padding-top: 120px;
+        padding-left: 53px;
+    }
+    // .product__delivery-list
+    &__delivery-list {
+        padding-left: 42px;
+        position: relative;
+        margin-bottom: 30px;
+        // .product__delivery-list_pickup
+        &_pickup {
+            &::before {
+                content: url("../img/product/map_marker.svg");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        // .product__delivery-list_courier
+        &_courier {
+            &::before {
+                content: url("../img/product/truck.svg");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    // .product__delivery-item
+    &__delivery-item {
+        font-size: 16px;
+        line-height: 20px;
+        color: #172029;
+        margin-top: 5px;
+    }
+    // .product__delivery-link
+    &__delivery-link {
+        margin-left: 42px;
+        font-size: 16px;
+        text-decoration: underline;
+    }
 }
+.slider-pro {
+}
+.sp-slides {
+}
+.sp-slide {
+}
+.sp-image {
+}
+.sp-thumbnails {
+}
+.sp-thumbnail {
+}
+
 //====================================================================================================
