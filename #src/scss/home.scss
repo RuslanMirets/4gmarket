@@ -1,3 +1,71 @@
 //====================================================================================================
-
+.product {
+    // .product__inner
+    &__inner {
+        background-color: #fff;
+        padding: 37px 30px 44px 30px;
+    }
+    // .product__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    // .product__title
+    &__title {
+        font-size: 30px;
+    }
+    // .product__icons
+    &__icons {
+    }
+    // .product__icon
+    &__icon {
+        margin-left: 18px;
+        // .product__icon_share
+        &_share {
+        }
+        // .product__icon_comparison
+        &_comparison {
+        }
+        // .product__icon_favorites
+        &_favorites {
+        }
+    }
+    // .product__info
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+    // .product__article
+    &__article {
+        font-size: 14px;
+        color: #7e7e7e;
+        margin-right: 35px;
+    }
+    // .product__rating
+    &__rating {
+        display: flex;
+        margin-right: 12px;
+    }
+    // .product__rating-item
+    &__rating-item {
+        margin-right: 5px;
+    }
+    // .product__rating-item_active
+    &_active {
+    }
+    // .product__reviews
+    &__reviews {
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: url("../img/product/reviews.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
 //====================================================================================================
