@@ -8,8 +8,8 @@
     @@include('_header.html',{})
 
     <!-- MAIN -->
-    <section class="product">
-        <div class="product__inner _container">
+    <section class="product _container">
+        <div class="product__inner">
             <div class="product__top">
                 <h1 class="product__title">Кукла LOL LIGHTS GLITTER</h1>
                 <div class="product__icons">
@@ -49,46 +49,40 @@
 
                 <!-- СЛАЙДЕР -->
                 <div class="product__slider">
-                    <div id="product-slider" class="slider-pro">
-                        <div class="product__slider-slides sp-slides">
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
-                            <div class="product__slider-slide sp-slide">
-                                <img class="sp-image" src="img/product/product.png" />
-                            </div>
+                    <div class="splide__secondary splide" id="secondary-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list-secondary splide__list">
+                                <li class="splide__slide-secondary splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/product/product.png">
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product__slider-thumbnails sp-thumbnails">
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
-                            <div class="product__slider-thumbnail sp-thumbnail">
-                                <img class="sp-thumbnail-image" src="img/product/product_mini.png" />
-                            </div>
+                    </div>
+                    <div id="primary-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                                <li class="splide__slide"><img src="img/product/product.png" alt=""></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -124,6 +118,57 @@
                     </ul>
                     <a class="product__delivery-link" href="#">Все способы доставки</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="characteristics _container">
+        <div class="characteristics__inner ">
+            <div class="characteristics__header">
+                <ul class="characteristics__header-list">
+                    <li class="characteristics__header-item">
+                        <a class="characteristics__header-link" href="#">О товаре</a>
+                    </li>
+                    <li class="characteristics__header-item characteristics__header-item_active">
+                        <a class="characteristics__header-link characteristics__header-link_active"
+                            href="#">Характеристики</a>
+                    </li>
+                    <li class="characteristics__header-item">
+                        <a class="characteristics__header-link" href="#">Обзор</a>
+                    </li>
+                    <li class="characteristics__header-item">
+                        <a class="characteristics__header-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="characteristics__header-item">
+                        <a class="characteristics__header-link" href="#">Доставка</a>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="characteristics__title">Подробные характеристики</h3>
+            <ul class="characteristics__list">
+                <li class="characteristics__item">
+                    <div class="characteristics__item-left">Тип</div>
+                    <div class="characteristics__item-right">кукла-модель</div>
+                </li>
+                <li class="characteristics__item">
+                    <div class="characteristics__item-left">В комплекте</div>
+                    <div class="characteristics__item-right">бутылочка</div>
+                </li>
+                <li class="characteristics__item">
+                    <div class="characteristics__item-left">Материал куклы</div>
+                    <div class="characteristics__item-right">пластик</div>
+                </li>
+                <li class="characteristics__item">
+                    <div class="characteristics__item-left">Персонаж</div>
+                    <div class="characteristics__item-right">L.O.L. Surprise!</div>
+                </li>
+                <li class="characteristics__item">
+                    <div class="characteristics__item-left">Дополнительная информация</div>
+                    <div class="characteristics__item-right">светится в темноте при ультрафиолете, фонарик в комплекте
+                    </div>
+                </li>
+            </ul>
+            <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию у продавца.
             </div>
         </div>
     </section>

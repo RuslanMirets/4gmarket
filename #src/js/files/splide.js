@@ -1,13 +1,3 @@
-// Меню бургер
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-    iconMenu.addEventListener("click", function (e) {
-        document.body.classList.toggle('_lock');
-        iconMenu.classList.toggle('_active');
-        menuBody.classList.toggle('_active');
-    });
-}
 /*!
  * Splide.js
  * Version  : 2.4.20
@@ -5876,30 +5866,3 @@ if (iconMenu) {
     /******/
 })()
     ;
-document.addEventListener('DOMContentLoaded', function () {
-    var secondarySlider = new Splide('#secondary-slider', {
-        fixedWidth: 100,
-        height: 100,
-        gap: 10,
-        cover: true,
-        isNavigation: true,
-        focus: 'center',
-        pagination: false,
-        breakpoints: {
-            '600': {
-                fixedWidth: 66,
-                height: 40,
-            }
-        },
-    }).mount();
-
-    var primarySlider = new Splide('#primary-slider', {
-        type: 'slide',
-        heightRatio: 1,
-        pagination: false,
-        arrows: false,
-        cover: true,
-    }); // do not call mount() here.
-
-    primarySlider.sync(secondarySlider).mount();
-});

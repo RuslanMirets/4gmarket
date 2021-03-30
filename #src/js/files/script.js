@@ -1,28 +1,27 @@
-$(document).ready(function ($) {
-    $('#product-slider').sliderPro({
-        width: 390,
-        height: 390,
-        orientation: 'vertical',
-        loop: false,
-        // arrows: true,
-        buttons: false,
-        thumbnailsPosition: 'left',
-        // thumbnailPointer: true,
-        thumbnailWidth: 83,
-        thumbnailHeight: 99,
-        thumbnailArrows: true,
-        autoplay: false,
+document.addEventListener('DOMContentLoaded', function () {
+    var secondarySlider = new Splide('#secondary-slider', {
+        fixedWidth: 100,
+        height: 100,
+        gap: 10,
+        cover: true,
+        isNavigation: true,
+        focus: 'center',
+        pagination: false,
         breakpoints: {
-            800: {
-                thumbnailsPosition: 'bottom',
-                thumbnailWidth: 270,
-                thumbnailHeight: 100
-            },
-            500: {
-                thumbnailsPosition: 'bottom',
-                thumbnailWidth: 120,
-                thumbnailHeight: 50
+            '600': {
+                fixedWidth: 66,
+                height: 40,
             }
-        }
-    });
+        },
+    }).mount();
+
+    var primarySlider = new Splide('#primary-slider', {
+        type: 'slide',
+        heightRatio: 1,
+        pagination: false,
+        arrows: false,
+        cover: true,
+    }); // do not call mount() here.
+
+    primarySlider.sync(secondarySlider).mount();
 });
