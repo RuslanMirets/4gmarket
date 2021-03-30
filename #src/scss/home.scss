@@ -368,6 +368,7 @@
 .product-item {
     border: 1px solid #ededed;
     width: 304px;
+    background-color: #fff;
     position: relative;
     padding-bottom: 20px;
     // .product-item__article
@@ -519,4 +520,34 @@
     }
 }
 
+//====================================================================================================
+.viewed {
+    background-color: #ff5a00;
+    height: 165px;
+    padding-top: 27px;
+    // .viewed__inner
+    &__inner {
+        margin-bottom: 36px;
+    }
+    // .viewed__title
+    &__title {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 27px;
+        margin-left: 32px;
+        padding-right: 70px;
+        position: relative;
+        display: inline-block;
+        &::after {
+            content: url("../img/viewed/arrow.svg");
+            position: absolute;
+            top: -3px;
+            right: 0;
+        }
+    }
+    // .viewed__items
+    &__items {
+        display: flex;
+    }
+}
 //====================================================================================================
