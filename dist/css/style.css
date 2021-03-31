@@ -16021,6 +16021,12 @@ a svg:hover #product-item__icon {
 
 .advantages__icon {
   margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .advantages__title {
@@ -17641,6 +17647,23 @@ a svg:hover #product-item__icon {
 
   .recommendations__item:nth-child(5) {
     display: none;
+  }
+
+  .advantages__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .advantages__item {
+    border-right: none;
+  }
+
+  .advantages__title {
+    text-align: center;
+  }
+
+  .advantages__text {
+    text-align: center;
   }
 }
 
