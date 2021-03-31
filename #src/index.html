@@ -7,8 +7,7 @@
 <body>
     @@include('_header.html',{})
 
-    <!-- MAIN -->
-    <section class="breadcrumbs _container">
+    <!-- <section class="breadcrumbs _container">
         <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
@@ -23,9 +22,9 @@
                 <li class="breadcrumbs__item">Кукла LOL LIGHTS GLITTER</li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
-    <section class="product _container">
+    <!-- <section class="product _container">
         <div class="product__inner">
             <div class="product__top">
                 <h1 class="product__title">Кукла LOL LIGHTS GLITTER</h1>
@@ -80,7 +79,6 @@
             </div>
             <div class="product__body">
 
-                <!-- СЛАЙДЕР -->
                 <div class="product__slider">
                     <div class="splide__secondary splide" id="secondary-slider">
                         <div class="splide__track">
@@ -119,7 +117,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- /СЛАЙДЕР -->
 
                 <div class="product__description">
                     <div class="product__price">13 300 ₽</div>
@@ -153,7 +150,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
 
     <section class="characteristics _container">
         <div class="characteristics__inner ">
@@ -177,36 +175,111 @@
                     </li>
                 </ul>
             </div>
-            <h3 class="characteristics__title">Подробные характеристики</h3>
-            <ul class="characteristics__list">
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Тип</div>
-                    <div class="characteristics__item-right">кукла-модель</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">В комплекте</div>
-                    <div class="characteristics__item-right">бутылочка</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Материал куклы</div>
-                    <div class="characteristics__item-right">пластик</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Персонаж</div>
-                    <div class="characteristics__item-right">L.O.L. Surprise!</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Дополнительная информация</div>
-                    <div class="characteristics__item-right">светится в темноте при ультрафиолете, фонарик в комплекте
-                    </div>
-                </li>
-            </ul>
-            <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию у продавца.
+            <div class="characteristics__accordion">
+                <ul class="characteristics__accordion-list" uk-accordion="multiple: true">
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">О товаре</a>
+                        <div class="characteristics__accordion-content uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li class="uk-open">
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Характеристики</a>
+                        <div class="uk-accordion-content">
+                            <h3 class="characteristics__title">Подробные характеристики</h3>
+                            <ul class="characteristics__list">
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Тип</div>
+                                    <div class="characteristics__item-right">кукла-модель</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">В комплекте</div>
+                                    <div class="characteristics__item-right">бутылочка</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Материал куклы</div>
+                                    <div class="characteristics__item-right">пластик</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Персонаж</div>
+                                    <div class="characteristics__item-right">L.O.L. Surprise!</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Дополнительная информация</div>
+                                    <div class="characteristics__item-right">светится в темноте при ультрафиолете,
+                                        фонарик в
+                                        комплекте
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию
+                                у продавца.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Обзор</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Отзывы</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Доставка</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="characteristics__info">
+                <h3 class="characteristics__title">Подробные характеристики</h3>
+                <ul class="characteristics__list">
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Тип</div>
+                        <div class="characteristics__item-right">кукла-модель</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">В комплекте</div>
+                        <div class="characteristics__item-right">бутылочка</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Материал куклы</div>
+                        <div class="characteristics__item-right">пластик</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Персонаж</div>
+                        <div class="characteristics__item-right">L.O.L. Surprise!</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Дополнительная информация</div>
+                        <div class="characteristics__item-right">светится в темноте при ультрафиолете, фонарик в
+                            комплекте
+                        </div>
+                    </li>
+                </ul>
+                <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию у
+                    продавца.
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="recommendations _container">
+    <!-- <section class="recommendations _container">
         <div class="recommendations__inner">
             <h1 class="recommendations__title">Специально для вас</h1>
             <div class="recommendations__items">
@@ -1131,10 +1204,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- MAIN -->
+    </section> -->
 
-    @@include('_footer.html',{})
+    <!-- @@include('_footer.html',{}) -->
     @@include('_js.html',{})
 </body>
 

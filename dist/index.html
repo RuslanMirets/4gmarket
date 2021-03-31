@@ -127,8 +127,7 @@
     </div>
 </header> -->
 
-    <!-- MAIN -->
-    <section class="breadcrumbs _container">
+    <!-- <section class="breadcrumbs _container">
         <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
@@ -143,9 +142,9 @@
                 <li class="breadcrumbs__item">Кукла LOL LIGHTS GLITTER</li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
-    <section class="product _container">
+    <!-- <section class="product _container">
         <div class="product__inner">
             <div class="product__top">
                 <h1 class="product__title">Кукла LOL LIGHTS GLITTER</h1>
@@ -200,7 +199,6 @@
             </div>
             <div class="product__body">
 
-                <!-- СЛАЙДЕР -->
                 <div class="product__slider">
                     <div class="splide__secondary splide" id="secondary-slider">
                         <div class="splide__track">
@@ -239,7 +237,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- /СЛАЙДЕР -->
 
                 <div class="product__description">
                     <div class="product__price">13 300 ₽</div>
@@ -273,7 +270,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
 
     <section class="characteristics _container">
         <div class="characteristics__inner ">
@@ -297,36 +295,111 @@
                     </li>
                 </ul>
             </div>
-            <h3 class="characteristics__title">Подробные характеристики</h3>
-            <ul class="characteristics__list">
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Тип</div>
-                    <div class="characteristics__item-right">кукла-модель</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">В комплекте</div>
-                    <div class="characteristics__item-right">бутылочка</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Материал куклы</div>
-                    <div class="characteristics__item-right">пластик</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Персонаж</div>
-                    <div class="characteristics__item-right">L.O.L. Surprise!</div>
-                </li>
-                <li class="characteristics__item">
-                    <div class="characteristics__item-left">Дополнительная информация</div>
-                    <div class="characteristics__item-right">светится в темноте при ультрафиолете, фонарик в комплекте
-                    </div>
-                </li>
-            </ul>
-            <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию у продавца.
+            <div class="characteristics__accordion">
+                <ul class="characteristics__accordion-list" uk-accordion="multiple: true">
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">О товаре</a>
+                        <div class="characteristics__accordion-content uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li class="uk-open">
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Характеристики</a>
+                        <div class="uk-accordion-content">
+                            <h3 class="characteristics__title">Подробные характеристики</h3>
+                            <ul class="characteristics__list">
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Тип</div>
+                                    <div class="characteristics__item-right">кукла-модель</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">В комплекте</div>
+                                    <div class="characteristics__item-right">бутылочка</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Материал куклы</div>
+                                    <div class="characteristics__item-right">пластик</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Персонаж</div>
+                                    <div class="characteristics__item-right">L.O.L. Surprise!</div>
+                                </li>
+                                <li class="characteristics__item">
+                                    <div class="characteristics__item-left">Дополнительная информация</div>
+                                    <div class="characteristics__item-right">светится в темноте при ультрафиолете,
+                                        фонарик в
+                                        комплекте
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию
+                                у продавца.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Обзор</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Отзывы</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="characteristics__accordion-title uk-accordion-title" href="#">Доставка</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="characteristics__info">
+                <h3 class="characteristics__title">Подробные характеристики</h3>
+                <ul class="characteristics__list">
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Тип</div>
+                        <div class="characteristics__item-right">кукла-модель</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">В комплекте</div>
+                        <div class="characteristics__item-right">бутылочка</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Материал куклы</div>
+                        <div class="characteristics__item-right">пластик</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Персонаж</div>
+                        <div class="characteristics__item-right">L.O.L. Surprise!</div>
+                    </li>
+                    <li class="characteristics__item">
+                        <div class="characteristics__item-left">Дополнительная информация</div>
+                        <div class="characteristics__item-right">светится в темноте при ультрафиолете, фонарик в
+                            комплекте
+                        </div>
+                    </li>
+                </ul>
+                <div class="characteristics__footer">Перед покупкой уточняйте характеристики и комплектацию у
+                    продавца.
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="recommendations _container">
+    <!-- <section class="recommendations _container">
         <div class="recommendations__inner">
             <h1 class="recommendations__title">Специально для вас</h1>
             <div class="recommendations__items">
@@ -1251,162 +1324,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- MAIN -->
+    </section> -->
 
-    <!-- FOOTER -->
-<footer class="footer">
-    <div class="footer__inner _container">
-        <div class="footer__top">
-            <div class="footer__columns">
-                <div class="footer__column">
-                    <h3 class="footer__column-title">Каталог продукции</h3>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Детские игрушки</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Аксессуары</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Гаджеты</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Запчасти к телефонам</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Игровые приставки</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Квадрокоптеры</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Смартфоны</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__column-title">Помощь покупателю</h3>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Обмен, возврат</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Оплата</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Доставка</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Оптовикам</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Поставщикам</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class=" footer__list-link" href="#">Поможем выбрать</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Как сделать заказ</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">О регистрации</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__column-title">Компания</h3>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">О компании</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Обратная связь</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Адреса магазинов</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Гарантия 4GMarket</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Статьи</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">Новости</a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a class="footer__list-link" href="#">О нас</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__phone">
-                        <a class="footer__phone-link" href="tel:88007009035">8 (800) 700-90-35</a>
-                        <div class="footer__phone-label">Бесплатная консультация</div>
-                    </div>
-                    <div class="footer__phone">
-                        <a class="footer__phone-link" href="tel:89052629972">8 (905) 262-99-72</a>
-                        <div class="footer__phone-label">Бесплатная консультация</div>
-                    </div>
-                    <div class="footer__socials footer__socials_left">
-                        <a class="footer__social-link footer__social-link_left" href="#">
-                            <img src="img/footer/viber.svg" alt="viber">
-                        </a>
-                        <a class="footer__social-link footer__social-link_left" href="#">
-                            <img src="img/footer/whatsapp.svg" alt="whatsapp">
-                        </a>
-                    </div>
-                    <div class="footer__callback">
-                        <div class="footer__callback-label">Закажите обратный звонок <br> для бесплатной консультации
-                        </div>
-                        <a class="footer__callback-button" href="#">обратный звонок</a>
-                    </div>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__address">193318, г. Санкт-Петербург, <br> ул.Коллонтай, д.2, стр.1</div>
-                    <a class="footer__email" href="mailto:info@4gmarket.ru">info@4gmarket.ru</a>
-                    <div class="footer__socials footer__socials_right">
-                        <a class="footer__social-link footer__social-link_right" href="#">
-                            <img src="img/footer/instagram.svg" alt="instagram">
-                        </a>
-                        <a class="footer__social-link footer__social-link_right" href="#">
-                            <img src="img/footer/vk.svg" alt="vk">
-                        </a>
-                        <a class="footer__social-link footer__social-link_right" href="#">
-                            <img src="img/footer/facebook.svg" alt="facebook">
-                        </a>
-                    </div>
-                    <a class="footer__logo" href="#">
-                        <img src="img/footer/logo_footer.svg" alt="logo">
-                    </a>
-                    <div class="footer__download">
-                        <a class="footer__download-link" href="#">
-                            <img src="img/footer/google_play.png" alt="google_play">
-                        </a>
-                        <a class="footer__download-link" href="#">
-                            <img src="img/footer/app_store.png" alt="app_store">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="footer__bottom-info">
-                <h2 class="footer__bottom-title">Будьте в курсе</h2>
-                <div class="footer__bottom-text">Подпишитесь на последние обновления и узнавайте
-                    о новинках и специальных предложениях первыми</div>
-            </div>
-            <form class="footer__form" action="" method="GET">
-                <input class="footer__form-input" type="email" placeholder="Ваш e-mail">
-                <input class="footer__form-submit" type="submit" value="подписаться">
-            </form>
-            <div class="footer__copyright">© 4GMarket 2014—2020. Все права защищены. Указанная стоимость товаров и
-                условия их приобретения действительны на текущую дату.</div>
-        </div>
-    </div>
-</footer>
-<!-- FOOTER -->
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
