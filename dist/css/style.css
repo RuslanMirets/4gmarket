@@ -15973,16 +15973,24 @@ a svg:hover #product-item__icon {
 }
 
 .viewed__title::after {
-  content: url("../img/viewed/arrow.svg");
+  content: "";
   position: absolute;
-  top: -3px;
+  background-image: url("../img/viewed/arrow.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
   right: 0;
+  top: -6px;
 }
 
 .viewed__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
 }
 
 .advantages {
@@ -17874,6 +17882,23 @@ a svg:hover #product-item__icon {
 
   .characteristics__footer {
     margin-left: 15px;
+  }
+
+  .viewed {
+    height: 130px;
+  }
+
+  .viewed__title {
+    font-weight: 600;
+    font-size: 24px;
+    padding-right: 50px;
+    margin-left: 0;
+  }
+
+  .viewed__title::after {
+    width: 30px;
+    height: 30px;
+    top: -1px;
   }
 }
 

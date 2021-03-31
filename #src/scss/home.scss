@@ -882,6 +882,9 @@
     height: 165px;
     padding-top: 27px;
     margin-bottom: 490px;
+    @media (max-width: 768px) {
+        height: 130px;
+    }
     // .viewed__inner
     &__inner {
     }
@@ -894,16 +897,33 @@
         padding-right: 70px;
         position: relative;
         display: inline-block;
+        @media (max-width: 768px) {
+            font-weight: 600;
+            font-size: 24px;
+            padding-right: 50px;
+            margin-left: 0;
+        }
         &::after {
-            content: url("../img/viewed/arrow.svg");
+            content: "";
             position: absolute;
-            top: -3px;
+            background-image: url("../img/viewed/arrow.svg");
+            background-size: contain;
+            width: 40px;
+            height: 40px;
             right: 0;
+            top: -6px;
+            @media (max-width: 768px) {
+                width: 30px;
+                height: 30px;
+                top: -1px;
+            }
         }
     }
     // .viewed__items
     &__items {
         display: flex;
+        justify-content: space-between;
+        background-color: #fff;
     }
 }
 //====================================================================================================
