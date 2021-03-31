@@ -1,4 +1,38 @@
 //====================================================================================================
+.breadcrumbs {
+    margin-bottom: 25px;
+    // .breadcrumbs__inner
+    &__inner {
+    }
+    // .breadcrumbs__list
+    &__list {
+        display: flex;
+    }
+    // .breadcrumbs__item
+    &__item {
+        margin-right: 14px;
+        padding-right: 20px;
+        position: relative;
+        font-size: 16px;
+        color: #979797;
+        &::after {
+            content: url("../img/breadcrumbs_arrow.png");
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+    // .breadcrumbs__link
+    &__link {
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+//====================================================================================================
 .product {
     margin-bottom: 30px;
     // .product__inner
@@ -24,6 +58,9 @@
         margin-left: 18px;
         // .product__icon_share
         &_share {
+            &:hover {
+                fill: red;
+            }
         }
         // .product__icon_comparison
         &_comparison {
@@ -31,6 +68,9 @@
         // .product__icon_favorites
         &_favorites {
         }
+    }
+    a svg:hover #share {
+        fill: #6a3df7;
     }
     // .product__info
     &__info {
@@ -152,6 +192,10 @@
         background: #4517d3;
         border-radius: 5px;
         margin-bottom: 50px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #ffc800;
+        }
     }
     // .product__characteristics
     &__characteristics {
@@ -272,8 +316,13 @@
         font-size: 22px;
         color: #172029;
         padding: 12px 0;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.3s;
         // .characteristics__header-link_active
         &_active {
+            border-bottom: 3px solid #6a3df7;
+        }
+        &:hover {
             border-bottom: 3px solid #6a3df7;
         }
     }
@@ -441,7 +490,7 @@
     // .product-item__name
     &__name {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 19 / 16 * 100%;
         margin-left: 18px;
         margin-right: 12px;
         height: 52px;
@@ -474,6 +523,10 @@
         border-radius: 5px;
         font-size: 14px;
         color: #ffffff;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #ffc800;
+        }
     }
     // .product-item__discount
     &__discount {
@@ -587,7 +640,7 @@
     // .advantages__text
     &__text {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 19 / 16 * 100%;
     }
 }
 

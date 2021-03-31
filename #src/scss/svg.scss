@@ -1,0 +1,21 @@
+a #product__icon-share,
+a #product__icon-comparison,
+a #product__icon-favorites {
+    transition: all 0.3s;
+}
+a svg:hover #product__icon-share,
+a svg:hover #product__icon-comparison,
+a svg:hover #product__icon-favorites {
+    fill: #6a3df7;
+}
+a svg #product-item__icon_circle,
+a svg #product-item__icon {
+    transition: all 0.3s;
+}
+
+a svg:hover #product-item__icon_circle {
+    stroke: #6a3df7;
+}
+a svg:hover #product-item__icon {
+    fill: #6a3df7;
+}
