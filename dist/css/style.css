@@ -15730,6 +15730,9 @@ a svg:hover #product-item__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product-item {
@@ -15801,6 +15804,12 @@ a svg:hover #product-item__icon {
   margin-right: 6px;
 }
 
+.product-item__star span {
+  display: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
 .product-item__comments {
   font-weight: 600;
   font-size: 14px;
@@ -15809,10 +15818,15 @@ a svg:hover #product-item__icon {
 }
 
 .product-item__comments::before {
-  content: url("../img/product_item/comment.svg");
+  content: "";
+  background-image: url("../img/product_item/comment.svg");
   position: absolute;
-  top: 0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
   left: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .product-item__group {
@@ -15827,7 +15841,7 @@ a svg:hover #product-item__icon {
   line-height: 118.75%;
   margin-left: 18px;
   margin-right: 12px;
-  height: 52px;
+  height: 60px;
 }
 
 .product-item__cart {
@@ -15876,6 +15890,10 @@ a svg:hover #product-item__icon {
   background-color: #ffc800;
 }
 
+.product-item__cart-icon {
+  display: none;
+}
+
 .product-item__discount {
   margin-left: 20px;
   margin-right: 16px;
@@ -15894,6 +15912,9 @@ a svg:hover #product-item__icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-item__discount-percent {
@@ -15924,10 +15945,14 @@ a svg:hover #product-item__icon {
 }
 
 .product-item__discount-price::after {
-  content: url("../img/product_item/info.svg");
+  content: "";
   position: absolute;
-  top: -2px;
+  background-image: url("../img/product_item/info.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   right: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .viewed {
@@ -17605,6 +17630,10 @@ a svg:hover #product-item__icon {
   .characteristics__header-link {
     padding: 8px 0;
   }
+
+  .recommendations__item:nth-child(5) {
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -17614,6 +17643,16 @@ a svg:hover #product-item__icon {
 
   .uk-visible\@l {
     display: none !important;
+  }
+}
+
+@media (max-width: 1130px) {
+  .recommendations__items {
+    padding: 0 10px;
+  }
+
+  .recommendations__item:nth-child(4) {
+    display: none;
   }
 }
 
@@ -17641,6 +17680,62 @@ a svg:hover #product-item__icon {
 @media (max-width: 1000px) {
   .characteristics__header-list {
     padding-right: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .recommendations__title {
+    font-size: 24px;
+    padding-right: 50px;
+  }
+
+  .recommendations__title::after {
+    scale: 0.7;
+    top: -8px;
+  }
+
+  .product-item__article {
+    left: 15px;
+  }
+
+  .product-item__icons {
+    right: 6px;
+  }
+
+  .product-item__name {
+    font-size: 12px;
+  }
+
+  .product-item__cart {
+    margin-left: 14px;
+  }
+
+  .product-item__price {
+    font-size: 24px;
+  }
+
+  .product-item__add-to-cart {
+    width: 94px;
+  }
+
+  .product-item__discount {
+    margin-left: 14px;
+  }
+
+  .product-item__discount-percent {
+    font-size: 12px;
+    width: 109px;
+    margin-bottom: 8px;
+  }
+
+  .product-item__discount-price {
+    font-size: 14px;
+    padding-right: 24px;
+  }
+
+  .product-item__discount-price::after {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -17779,6 +17874,12 @@ a svg:hover #product-item__icon {
 
   .characteristics__footer {
     margin-left: 15px;
+  }
+}
+
+@media (max-width: 740px) {
+  .recommendations__item:nth-child(3) {
+    display: none;
   }
 }
 
@@ -17957,6 +18058,138 @@ a svg:hover #product-item__icon {
   .characteristics__footer {
     margin-bottom: 25px;
   }
+
+  .recommendations__inner {
+    padding-top: 25px;
+  }
+
+  .recommendations__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .recommendations__title::after {
+    top: -11px;
+  }
+
+  .recommendations__item:nth-child(3) {
+    display: block;
+  }
+
+  .product-item {
+    border: none;
+    max-width: 150px;
+  }
+
+  .product-item__article {
+    display: none;
+  }
+
+  .product-item__icons {
+    display: none;
+  }
+
+  .product-item__image {
+    margin-bottom: 15px;
+    margin-top: 16px;
+  }
+
+  .product-item__image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .product-item__review {
+    margin-bottom: 15px;
+  }
+
+  .product-item__rating {
+    margin-right: 0;
+  }
+
+  .product-item__star {
+    display: none;
+  }
+
+  .product-item__star:nth-child(1) {
+    display: block;
+    position: relative;
+    padding-right: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .product-item__star:nth-child(1) img {
+    width: 13px;
+    margin-right: 10px;
+  }
+
+  .product-item__star span {
+    display: block;
+  }
+
+  .product-item__comments {
+    font-size: 12px;
+  }
+
+  .product-item__comments::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .product-item__group {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .product-item__name {
+    display: none;
+  }
+
+  .product-item__cart {
+    padding: 8px 0;
+    margin-bottom: 19px;
+  }
+
+  .product-item__price {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .product-item__add-to-cart {
+    display: none;
+  }
+
+  .product-item__cart-icon {
+    display: block;
+  }
+
+  .product-item__discount-label {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .product-item__discount-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .product-item__discount-price {
+    font-size: 12px;
+  }
+
+  .product-item__discount-price::after {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -17976,9 +18209,19 @@ a svg:hover #product-item__icon {
   }
 }
 
+@media (max-width: 500px) {
+  .recommendations__item:nth-child(3) {
+    display: none;
+  }
+}
+
 @media (max-width: 410px) {
   .characteristics__item-left {
     margin-right: -54%;
+  }
+
+  .characteristics__item-right {
+    margin-left: 53%;
   }
 }
 
