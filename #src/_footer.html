@@ -4,8 +4,8 @@
         <div class="footer__top">
             <div class="footer__columns">
                 <div class="footer__column">
-                    <h3 class="footer__column-title">Каталог продукции</h3>
-                    <ul class="footer__list">
+                    <h3 class="footer__column-title" data-da="footer__accordion-title_1,0,700">Каталог продукции</h3>
+                    <ul class="footer__list" data-da="footer__accordion-content_1,0,700">
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="#">Детские игрушки</a>
                         </li>
@@ -30,8 +30,8 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__column-title">Помощь покупателю</h3>
-                    <ul class="footer__list">
+                    <h3 class="footer__column-title" data-da="footer__accordion-title_2,0,700">Помощь покупателю</h3>
+                    <ul class="footer__list" data-da="footer__accordion-content_2,0,700">
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="#">Обмен, возврат</a>
                         </li>
@@ -59,8 +59,8 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__column-title">Компания</h3>
-                    <ul class="footer__list">
+                    <h3 class="footer__column-title" data-da="footer__accordion-title_3,0,700">Компания</h3>
+                    <ul class="footer__list" data-da="footer__accordion-content_3,0,700">
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="#">О компании</a>
                         </li>
@@ -82,9 +82,15 @@
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="#">О нас</a>
                         </li>
+                        <li class="footer__list-item footer__list-item_mobile">
+                            <a class="footer__list-link" href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__list-item footer__list-item_mobile">
+                            <a class="footer__list-link" href="#">Пользовательское соглашение</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer__column">
+                <div class="footer__column" data-da="bottom-footer,0,1000">
                     <div class="footer__phone">
                         <a class="footer__phone-link" href="tel:88007009035">8 (800) 700-90-35</a>
                         <div class="footer__phone-label">Бесплатная консультация</div>
@@ -107,7 +113,7 @@
                         <a class="footer__callback-button" href="#">обратный звонок</a>
                     </div>
                 </div>
-                <div class="footer__column">
+                <div class="footer__column" data-da="bottom-footer,0,1400">
                     <div class="footer__address">193318, г. Санкт-Петербург, <br> ул.Коллонтай, д.2, стр.1</div>
                     <a class="footer__email" href="mailto:info@4gmarket.ru">info@4gmarket.ru</a>
                     <div class="footer__socials footer__socials_right">
@@ -135,19 +141,47 @@
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="footer__bottom-info">
-                <h2 class="footer__bottom-title">Будьте в курсе</h2>
-                <div class="footer__bottom-text">Подпишитесь на последние обновления и узнавайте
-                    о новинках и специальных предложениях первыми</div>
+        <div class="footer__accordion">
+            <div class="footer__accordion-list" uk-accordion="multiple: true">
+                <li class="footer__accordion-item footer__accordion-item_1">
+                    <a class="footer__accordion-title footer__accordion-title_1 uk-accordion-title" href="#"></a>
+                    <div class="footer__accordion-content footer__accordion-content_1 uk-accordion-content">
+
+                    </div>
+                </li>
+                <li class="footer__accordion-item footer__accordion-item_2">
+                    <a class="footer__accordion-title footer__accordion-title_2 uk-accordion-title" href="#"></a>
+                    <div class="footer__accordion-content footer__accordion-content_2 uk-accordion-content">
+
+                    </div>
+                </li>
+                <li class="footer__accordion-item footer__accordion-item_3">
+                    <a class="footer__accordion-title footer__accordion-title_3 uk-accordion-title" href="#"></a>
+                    <div class="footer__accordion-content footer__accordion-content_3 uk-accordion-content">
+
+                    </div>
+                </li>
+
             </div>
-            <form class="footer__form" action="" method="GET">
-                <input class="footer__form-input" type="email" placeholder="Ваш e-mail">
-                <input class="footer__form-submit" type="submit" value="подписаться">
-            </form>
-            <div class="footer__copyright">© 4GMarket 2014—2020. Все права защищены. Указанная стоимость товаров и
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="footer__bottom-content">
+                <div class="footer__bottom-info">
+                    <h2 class="footer__bottom-title">Будьте в курсе</h2>
+                    <div class="footer__bottom-text">Подпишитесь на последние обновления и узнавайте
+                        о новинках и специальных предложениях первыми</div>
+                </div>
+                <form class="footer__form form-footer" action="" method="GET">
+                    <input class="footer__form-input" type="email" placeholder="Ваш e-mail">
+                    <input class="footer__form-submit" type="submit" value="подписаться">
+                </form>
+            </div>
+            <div class="footer__copyright" data-da="footer__footer,0,1000">© 4GMarket 2014—2020. Все права защищены.
+                Указанная
+                стоимость товаров и
                 условия их приобретения действительны на текущую дату.</div>
         </div>
+        <div class="footer__footer"></div>
     </div>
 </footer>
 <!-- FOOTER -->
