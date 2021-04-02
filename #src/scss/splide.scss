@@ -178,7 +178,7 @@
     border: 3px solid transparent;
 }
 .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
-    border-color: #000;
+    border-color: #ededed;
 }
 .splide--nav > .splide__track > .splide__list > .splide__slide:focus {
     outline: none;
@@ -209,6 +209,7 @@
 .splide--ttb > .splide__arrows .splide__arrow--prev,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev {
     top: 1em;
+    transform: translate(-13px, -20px);
 }
 .splide--ttb > .splide__arrows .splide__arrow--prev svg,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev svg {
@@ -218,6 +219,7 @@
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--next {
     top: auto;
     bottom: 1em;
+    transform: translate(-13px, 20px);
 }
 .splide--ttb > .splide__arrows .splide__arrow--next svg,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--next svg {

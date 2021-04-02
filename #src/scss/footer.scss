@@ -246,25 +246,18 @@
         text-align: center;
         color: #dfaf00;
         background-color: transparent;
-        padding: 15px 30px;
         border: 2px solid #dfaf00;
         border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 187px;
+        height: 45px;
         @media (max-width: 1000px) {
             font-size: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 187px;
-            height: 45px;
-            padding: 0;
         }
         @media (max-width: 700px) {
             margin-bottom: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 54px;
-            padding: 0;
             width: 100%;
         }
     }
