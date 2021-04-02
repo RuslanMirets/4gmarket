@@ -15067,6 +15067,10 @@ a svg:hover #product-item__icon {
   border-bottom: 1px solid #292929;
 }
 
+.footer__accordion {
+  display: none;
+}
+
 .footer__accordion-item {
   border-bottom: 1px solid #979797;
 }
@@ -15329,10 +15333,6 @@ a svg:hover #product-item__icon {
   line-height: 121.42857%;
   text-align: right;
   color: #767676;
-}
-
-.footer__footer {
-  padding: 40px 14px;
 }
 
 .breadcrumbs {
@@ -17933,6 +17933,18 @@ a svg:hover #product-item__icon {
 
   .footer__callback-button {
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 187px;
+    height: 45px;
+    padding: 0;
   }
 
   .footer__address {
@@ -17979,6 +17991,10 @@ a svg:hover #product-item__icon {
     margin: 0;
     max-width: 100%;
     text-align: left;
+  }
+
+  .footer__footer {
+    padding: 40px 14px;
   }
 
   .characteristics__header-list {
@@ -18236,6 +18252,10 @@ a svg:hover #product-item__icon {
     display: none;
   }
 
+  .footer__accordion {
+    display: block;
+  }
+
   .footer__column {
     width: 100%;
     text-align: center;
@@ -18301,6 +18321,7 @@ a svg:hover #product-item__icon {
             align-items: center;
     height: 54px;
     padding: 0;
+    width: 100%;
   }
 
   .footer__address {

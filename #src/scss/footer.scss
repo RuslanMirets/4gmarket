@@ -25,6 +25,10 @@
     }
     // .footer__accordion
     &__accordion {
+        display: none;
+        @media (max-width: 700px) {
+            display: block;
+        }
     }
     // .footer__accordion-list
     &__accordion-list {
@@ -247,6 +251,12 @@
         border-radius: 5px;
         @media (max-width: 1000px) {
             font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 187px;
+            height: 45px;
+            padding: 0;
         }
         @media (max-width: 700px) {
             margin-bottom: 35px;
@@ -255,6 +265,7 @@
             align-items: center;
             height: 54px;
             padding: 0;
+            width: 100%;
         }
     }
     // .footer__address
@@ -479,7 +490,9 @@
     }
     // .footer__footer
     &__footer {
-        padding: 40px 14px;
+        @media (max-width: 1000px) {
+            padding: 40px 14px;
+        }
         @media (max-width: 700px) {
             padding: 25px 0;
         }
