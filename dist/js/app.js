@@ -18360,9 +18360,9 @@ document.addEventListener('DOMContentLoaded', function () {
         direction: 'ttb',
         perPage: 4,
         breakpoints: {
-            '600': {
+            '1400': {
                 fixedWidth: 66,
-                height: 40,
+                hheight: 425,
             }
         },
     }).mount();
@@ -18376,6 +18376,12 @@ document.addEventListener('DOMContentLoaded', function () {
         arrows: false,
         cover: true,
         direction: 'ttb',
+        breakpoints: {
+            '1400': {
+                fixedWidth: 316,
+                height: 316,
+            }
+        },
     });
 
     primarySlider.sync(secondarySlider).mount();

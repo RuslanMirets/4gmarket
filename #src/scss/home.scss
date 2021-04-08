@@ -113,6 +113,9 @@
     &__body {
         display: grid;
         grid-template-columns: 1fr 390px 1fr;
+        @media (max-width: 1400px) {
+            grid-template-columns: 467px 309px auto;
+        }
     }
 
     // .product__slider
@@ -153,7 +156,6 @@
             justify-content: center;
         }
     }
-
     // .product__description
     &__description {
         // padding-right: 126px;
