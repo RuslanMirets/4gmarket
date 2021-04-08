@@ -29,10 +29,10 @@ body {
     }
 }
 main {
-    flex-grow: 1;
+    flex: 1 0 auto;
 }
 footer {
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 a {
     color: #000;
@@ -71,4 +71,5 @@ a {
 @import "header";
 @import "footer";
 @import "home";
+@import "product-card";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>===============================================================================

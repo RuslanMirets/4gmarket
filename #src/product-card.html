@@ -8,6 +8,23 @@
     @@include('_header.html',{})
     <main class="main">
 
+        <!-- <section class="breadcrumbs _container">
+        <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Куклы L.O.L. Surprise</a>
+                </li>
+                <li class="breadcrumbs__item">Кукла LOL LIGHTS GLITTER</li>
+            </ul>
+        </div>
+    </section> -->
+
         <section class="product">
             <div class="container">
                 <div class="product__inner">
@@ -65,8 +82,8 @@
                         </div>
                         <a class="product__reviews" href="#">5</a>
                     </div>
-                    <div class="product__body">
-
+                    <divx class="product__body">
+                        <!-- 
                         <div class="product__slider">
                             <div class="splide__secondary splide" id="secondary-slider">
                                 <div class="splide__track">
@@ -105,51 +122,55 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div> -->
+                        <div class="product__slider  uk-position-relative" uk-slideshow="animation: slider">
+                            <ul class="product__slider-list uk-slideshow-items uk-child-width-1-1">
+                                <li class="product__slider-list-item">
+                                    <img class="product__slider-list-image" src="img/product/product.png" alt="product"
+                                        uk-cover>
+                                </li>
+                                <li class="product__slider-list-item">
+                                    <img class="product__slider-list-image" src="img/product/product.png" alt="product"
+                                        uk-cover>
+                                </li>
+                                <li class="product__slider-list-item">
+                                    <img class="product__slider-list-image" src="img/product/product.png" alt="product"
+                                        uk-cover>
+                                </li>
+                                <li class="product__slider-list-item">
+                                    <img class="product__slider-list-image" src="img/product/product.png" alt="product"
+                                        uk-cover>
+                                </li>
+                            </ul>
+                            <div class="product__thumbnav uk-position-left">
+                                <ul class="product__thumbnav-list uk-thumbnav uk-thumbnav-vertical">
+                                    <li class="product__thumbnav-list-item" uk-slideshow-item="0">
+                                        <a class="product__thumbnav-list-link" href="#">
+                                            <img class="product__thumbnav-list-image" src="img/product/product.png"
+                                                alt="product">
+                                        </a>
+                                    </li>
+                                    <li class="product__thumbnav-list-item" uk-slideshow-item="1">
+                                        <a class="product__thumbnav-list-link" href="#">
+                                            <img class="product__thumbnav-list-image" src="img/product/product.png"
+                                                alt="product">
+                                        </a>
+                                    </li>
+                                    <li class="product__thumbnav-list-item" uk-slideshow-item="2">
+                                        <a class="product__thumbnav-list-link" href="#">
+                                            <img class="product__thumbnav-list-image" src="img/product/product.png"
+                                                alt="product">
+                                        </a>
+                                    </li>
+                                    <li class="product__thumbnav-list-item" uk-slideshow-item="3">
+                                        <a class="product__thumbnav-list-link" href="#">
+                                            <img class="product__thumbnav-list-image" src="img/product/product.png"
+                                                alt="product">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <!-- <div class="uk-position-relative" uk-slideshow="animation: slide">
-                    <ul class="uk-slideshow-items">
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="img/product/product.png" alt="" uk-cover>
-                        </li>
-                    </ul>
-                    <div class="uk-position-left" uk-slider>
-                        <ul class="test uk-slider-items uk-child-width-1-4  ">
-                            <li uk-slideshow-item="0">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                            <li uk-slideshow-item="1">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                            <li uk-slideshow-item="2">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                            <li uk-slideshow-item="3">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                            <li uk-slideshow-item="4">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                            <li uk-slideshow-item="5">
-                                <a href="#"><img src="img/product/product.png" width="100" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
 
                         <div class="product__description">
                             <div class="product__price">13 300 ₽</div>
@@ -182,8 +203,8 @@
                             </ul>
                             <a class="product__delivery-link" href="#">Все способы доставки</a>
                         </div>
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
 

@@ -18363,7 +18363,11 @@ document.addEventListener('DOMContentLoaded', function () {
             '1400': {
                 fixedWidth: 66,
                 hheight: 425,
-            }
+            },
+            '1200': {
+                fixedWidth: 60,
+                hheight: 350,
+            },
         },
     }).mount();
 
@@ -18380,7 +18384,11 @@ document.addEventListener('DOMContentLoaded', function () {
             '1400': {
                 fixedWidth: 316,
                 height: 316,
-            }
+            },
+            '1200': {
+                fixedWidth: 228,
+                height: 228,
+            },
         },
     });
 
